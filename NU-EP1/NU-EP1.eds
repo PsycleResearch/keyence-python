@@ -1,0 +1,1550 @@
+$ EZ-EDS Version 3.3 Generated Electronic Data Sheet
+
+[File]
+        DescText = "EtherNet/IP Adapter";
+        CreateDate = 04-01-2010;
+        CreateTime = 19:35:18;
+        ModDate = 04-01-2010;
+        ModTime = 19:35:18;
+        Revision = 1.2;
+        HomeURL = "http://www.keyence.co.jp/";
+
+[Device]
+        VendCode = 367;
+        VendName = "Keyence Corporation";
+        ProdType = 0;
+        ProdTypeStr = "Generic Device";
+        ProdCode = 2501;
+        MajRev = 1;
+        MinRev = 1;
+        ProdName = "NU-EP1";
+        Catalog = "NU-EP1";
+        Icon = "NU-EP1.ico";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param100 =
+                0,
+                6,"20 66 24 00 30 64",
+                0x0010,
+                0xD2,
+                2,
+                "Status",
+                "",
+                "Indicates the status of this unit and connected sensor amplifiers. ",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum100 =
+                0,"NU-EP1 Error Status",
+                1,"Reserve",
+                2,"Reserve",
+                3,"Reserve",
+                4,"Reserve",
+                5,"Reserve",
+                6,"Reserve",
+                7,"Reserve",
+                8,"Updating Sensor Setting",
+                9,"Sensor EEPROM Busy",
+                10,"Sensor External Input Busy",
+                11,"Sensor Setting Error",
+                12,"Reserve",
+                13,"Sensor Ready",
+                14,"Warning Status",
+                15,"Error Status";
+        Param101 =
+                0,
+                6,"20 66 24 00 30 65",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor Error Status",
+                "",
+                "Indicates the error status of the connected sensor amplifiers. When error is occurred, the bit of the corresponding ID number of amplifier is turned ON. ",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum101 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param102 =
+                0,
+                6,"20 66 24 00 30 66",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor Warning Status",
+                "",
+                "Indicates the warning status of the connected sensor amplifiers. When warning is occurred, the bit of the corresponding ID number of amplifier is turned ON. ",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum102 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param103 =
+                0,
+                6,"20 66 24 00 30 67",
+                0x0010,
+                0xD2,
+                2,
+                "L-on/D-on (N.O./N.C.)",
+                "",
+                "Indicates the status of L-on/D-on (N.O./N.C.) of each amplifier. The bit of the corresponding amplifier is turned OFF for L-on (N.O.) and turned ON for D-on (N.C.). ",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum103 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param104 =
+                0,
+                6,"20 66 24 00 30 68",
+                0x0010,
+                0xD2,
+                2,
+                "Current Value Property",
+                "",
+                "Indicates the status of current value of each amplifier. When the value is [Over-range],[Under-range], and [Invalid], the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum104 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param105 =
+                0,
+                6,"20 66 24 00 30 69",
+                0x0010,
+                0xD2,
+                2,
+                "Output",
+                "",
+                "Indicates the status of output of each amplifier. When outputting, the bit of the corresponding amplifier is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum105 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param108 =
+                0,
+                6,"20 66 24 00 30 6C",
+                0x0010,
+                0xC7,
+                2,
+                "Error ID Number",
+                "",
+                "Indicates the ID Number of the unit having error.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Param109 =
+                0,
+                6,"20 66 24 00 30 6D",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code",
+                "",
+                "Indicates the Error code that is happening.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param110 =
+                0,
+                6,"20 66 24 00 30 6E",
+                0x0010,
+                0xC7,
+                2,
+                "Warning ID Number",
+                "",
+                "Indicates the ID Number of the unit having warning.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Param111 =
+                0,
+                6,"20 66 24 00 30 6F",
+                0x0010,
+                0xC7,
+                2,
+                "Warning Code",
+                "",
+                "Indicates the Warning code that is happening.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param112 =
+                0,
+                6,"20 66 24 00 30 70",
+                0x0010,
+                0xC7,
+                2,
+                "Setting Error ID Number",
+                "",
+                "Indicates the ID Number of the unit having setting problem.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Param116 =
+                0,
+                6,"20 66 24 00 30 74",
+                0x0010,
+                0xD2,
+                2,
+                "Fast Output",
+                "",
+                "Indicates the status of fast output of each amplifier. When outputting, the bit of corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum116 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param117 =
+                0,
+                6,"20 66 24 00 30 75",
+                0x0010,
+                0xD2,
+                2,
+                "Current Value Sync. Output",
+                "",
+                "Indicates the status of current value sync. output of each amplifier. When outputting, the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum117 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param128 =
+                0,
+                6,"20 66 24 00 30 80",
+                0x0010,
+                0xD2,
+                2,
+                "Updating Sensor Setting",
+                "",
+                "Indicates the status of updating of each amplifier. When updating, the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum128 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param129 =
+                0,
+                6,"20 66 24 00 30 81",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor EEPROM Busy",
+                "",
+                "Indicates the status of EEPROM processing of each amplifier. When EEPROM is busy, the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum129 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param130 =
+                0,
+                6,"20 66 24 00 30 82",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor External Input Busy",
+                "",
+                "Indicates the status of external input using wring of each amplifier. When the external input line is short-circuited, the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum130 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param131 =
+                0,
+                6,"20 66 24 00 30 83",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor Setting Error",
+                "",
+                "Indicates the status of setting error bit of each amplifier. When error occurs, the bit of the corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum131 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param133 =
+                0,
+                6,"20 66 24 00 30 85",
+                0x0010,
+                0xD2,
+                2,
+                "Sensor Ready",
+                "",
+                "Indicate the status of Sensor Ready bit of each amplifier. When operating normally, the bit of corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum133 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param141 =
+                0,
+                6,"20 66 24 00 30 8D",
+                0x0010,
+                0xD2,
+                2,
+                "Current Value Invalid",
+                "",
+                "When the current value of each amplifier is invalid,  the bit of corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum141 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param142 =
+                0,
+                6,"20 66 24 00 30 8E",
+                0x0010,
+                0xD2,
+                2,
+                "Current Value Under Range",
+                "",
+                "When the current value of each amplifier is less than lower limit of detection range,  the bit of corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum142 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param143 =
+                0,
+                6,"20 66 24 00 30 8F",
+                0x0010,
+                0xD2,
+                2,
+                "Current Value Over Range",
+                "",
+                "When the current value of each amplifier is higher than the upper limit of detection range, the bit of corresponding ID number is turned ON.",
+                0x0000,0xFFFF,0x0000,
+                ,,,,
+                ,,,,
+                ;
+        Enum143 =
+                0,"ID Number 1",
+                1,"ID Number 2",
+                2,"ID Number 3",
+                3,"ID Number 4",
+                4,"ID Number 5",
+                5,"ID Number 6",
+                6,"ID Number 7",
+                7,"ID Number 8",
+                8,"ID Number 9",
+                9,"ID Number 10",
+                10,"ID Number 11",
+                11,"ID Number 12",
+                12,"ID Number 13",
+                13,"ID Number 14",
+                14,"ID Number 15",
+                15,"ID Number 16";
+        Param144 =
+                0,
+                6,"20 66 24 00 30 90",
+                0x0010,
+                0xC7,
+                2,
+                "1st Sensor ID Number",
+                "",
+                "Indicates the ID number of the 1st sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum144 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param145 =
+                0,
+                6,"20 66 24 00 30 91",
+                0x0010,
+                0xC7,
+                2,
+                "2nd Sensor ID Number",
+                "",
+                "Indicates the ID number of the 2nd sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum145 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param146 =
+                0,
+                6,"20 66 24 00 30 92",
+                0x0010,
+                0xC7,
+                2,
+                "3rd Sensor ID Number",
+                "",
+                "Indicates the ID number of the 3rd sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum146 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param147 =
+                0,
+                6,"20 66 24 00 30 93",
+                0x0010,
+                0xC7,
+                2,
+                "4th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 4th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum147 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param148 =
+                0,
+                6,"20 66 24 00 30 94",
+                0x0010,
+                0xC7,
+                2,
+                "5th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 5th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum148 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param149 =
+                0,
+                6,"20 66 24 00 30 95",
+                0x0010,
+                0xC7,
+                2,
+                "6th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 6th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum149 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param150 =
+                0,
+                6,"20 66 24 00 30 96",
+                0x0010,
+                0xC7,
+                2,
+                "7th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 7th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum150 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param151 =
+                0,
+                6,"20 66 24 00 30 97",
+                0x0010,
+                0xC7,
+                2,
+                "8th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 8th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum151 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param152 =
+                0,
+                6,"20 66 24 00 30 98",
+                0x0010,
+                0xC7,
+                2,
+                "9th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 9th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum152 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param153 =
+                0,
+                6,"20 66 24 00 30 99",
+                0x0010,
+                0xC7,
+                2,
+                "10th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 10th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum153 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param154 =
+                0,
+                6,"20 66 24 00 30 9A",
+                0x0010,
+                0xC7,
+                2,
+                "11th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 11th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum154 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param155 =
+                0,
+                6,"20 66 24 00 30 9B",
+                0x0010,
+                0xC7,
+                2,
+                "12th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 12th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum155 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param156 =
+                0,
+                6,"20 66 24 00 30 9C",
+                0x0010,
+                0xC7,
+                2,
+                "13th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 13th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum156 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param157 =
+                0,
+                6,"20 66 24 00 30 9D",
+                0x0010,
+                0xC7,
+                2,
+                "14th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 14th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum157 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param158 =
+                0,
+                6,"20 66 24 00 30 9E",
+                0x0010,
+                0xC7,
+                2,
+                "15th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 15th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum158 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param159 =
+                0,
+                6,"20 66 24 00 30 9F",
+                0x0010,
+                0xC7,
+                2,
+                "16th Sensor ID Number",
+                "",
+                "Indicates the ID number of the 16th sensor amplifier.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum159 =
+                0,"Sensor not connected",
+                1,"ID Number 1",
+                2,"ID Number 2",
+                3,"ID Number 3",
+                4,"ID Number 4",
+                5,"ID Number 5",
+                6,"ID Number 6",
+                7,"ID Number 7",
+                8,"ID Number 8",
+                9,"ID Number 9",
+                10,"ID Number 10",
+                11,"ID Number 11",
+                12,"ID Number 12",
+                13,"ID Number 13",
+                14,"ID Number 14",
+                15,"ID Number 15",
+                16,"ID Number 16";
+        Param176 =
+                0,
+                6,"20 66 24 00 30 B0",
+                0x0001,
+                0xC7,
+                2,
+                "Sensor Status Mask Setting",
+                "",
+                "Set up the condition to determine if the sensor error or warning is recoverable NU-EP1 error (MS LED blinks in red). If mask is selected, MS LED does not blink in red when sensor error or warning occurs.",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum176 =
+                0,"Not mask",
+                1,"Mask";
+        Param177 =
+                0,
+                6,"20 66 24 00 30 B1",
+                0x0010,
+                0xC7,
+                2,
+                "Sensor Connected Number",
+                "",
+                "Indicates the number of amplifiers connected substantially.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Param178 =
+                0,
+                6,"20 66 24 00 30 B2",
+                0x0010,
+                0xC7,
+                2,
+                "Sensor Total ID Number",
+                "",
+                "Indicates the total number of sensor ID.",
+                0,16,0,
+                ,,,,
+                ,,,,
+                ;
+        Param179 =
+                0,
+                6,"20 66 24 00 30 B3",
+                0x0001,
+                0xC7,
+                2,
+                "Output Select Setting",
+                "",
+                "Select the type of output opened via cyclic communication.",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Enum179 =
+                0,"Fast Output",
+                1,"Sync. Output";
+        Param768 =
+                0,
+                7,"20 66 24 00 31 00 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 0)",
+                "",
+                "Indicates the error code of NU-EP1.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param769 =
+                0,
+                7,"20 66 24 00 31 01 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 1)",
+                "",
+                "Indicates the error code of the sensor ID number 1.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param770 =
+                0,
+                7,"20 66 24 00 31 02 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 2)",
+                "",
+                "Indicates the error code of the sensor ID number 2.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param771 =
+                0,
+                7,"20 66 24 00 31 03 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 3)",
+                "",
+                "Indicates the error code of the sensor ID number 3.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param772 =
+                0,
+                7,"20 66 24 00 31 04 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 4)",
+                "",
+                "Indicates the error code of the sensor ID number 4.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param773 =
+                0,
+                7,"20 66 24 00 31 05 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 5)",
+                "",
+                "Indicates the error code of the sensor ID number 5.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param774 =
+                0,
+                7,"20 66 24 00 31 06 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 6)",
+                "",
+                "Indicates the error code of the sensor ID number 6.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param775 =
+                0,
+                7,"20 66 24 00 31 07 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 7)",
+                "",
+                "Indicates the error code of the sensor ID number 7.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param776 =
+                0,
+                7,"20 66 24 00 31 08 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 8)",
+                "",
+                "Indicates the error code of the sensor ID number 8.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param777 =
+                0,
+                7,"20 66 24 00 31 09 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 9)",
+                "",
+                "Indicates the error code of the sensor ID number 9.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param778 =
+                0,
+                7,"20 66 24 00 31 0A 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 10)",
+                "",
+                "Indicates the error code of the sensor ID number 10.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param779 =
+                0,
+                7,"20 66 24 00 31 0B 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 11)",
+                "",
+                "Indicates the error code of the sensor ID number 11.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param780 =
+                0,
+                7,"20 66 24 00 31 0C 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 12)",
+                "",
+                "Indicates the error code of the sensor ID number 12.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param781 =
+                0,
+                7,"20 66 24 00 31 0D 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 13)",
+                "",
+                "Indicates the error code of the sensor ID number 13.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param782 =
+                0,
+                7,"20 66 24 00 31 0E 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 14)",
+                "",
+                "Indicates the error code of the sensor ID number 14.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param783 =
+                0,
+                7,"20 66 24 00 31 0F 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 15)",
+                "",
+                "Indicates the error code of the sensor ID number 15.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param784 =
+                0,
+                7,"20 66 24 00 31 10 03",
+                0x0010,
+                0xC7,
+                2,
+                "Error Code (ID Number 16)",
+                "",
+                "Indicates the error code of the sensor ID number 16.",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                ;
+        Param10000 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI (Connection1 and 2)",    $ name
+                "microsecond",          $ units
+                "",                     $ help string
+                500,10000000,10000,     $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI (Connection3)",    $ name
+                "microsecond",          $ units
+                "",                     $ help string
+                500,10000000,2000,      $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10100 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Monitor Data Size",    $ name
+                "byte",                 $ units
+                "",                     $ help string
+                2,128,128,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10101 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "External Input Size",    $ name
+                "byte",                 $ units
+                "",                     $ help string
+                2,4,4,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param20000 =
+                0,
+                ,,
+                0x0000,
+                0xD1,
+                1,
+                "Input Data",
+                "",
+                "",
+                0,255,0,
+                ,,,,
+                ,,,,
+                ;
+        Param20001 =
+                0,
+                ,,
+                0x0000,
+                0xD1,
+                1,
+                "Output Data",
+                "",
+                "",
+                0,255,0,
+                ,,,,
+                ,,,,
+                ;
+
+
+[Assembly]
+        Assem100 =
+                "Input Assembly",
+                "20 66 24 64 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Param20000;
+
+        Assem101 =
+                "Output Assembly",
+                "20 66 24 65 30 03",
+                4,
+                0x0000,
+                ,,
+                32,Param20001;
+
+        Assem102 =
+                "Input Assembly",
+                "20 66 24 66 30 03",
+                2,
+                0x0000,
+                ,,
+                16,Param20000;
+
+[Connection Manager]
+        Connection1 =
+                0x84010002,             $ trigger & transport
+                                        $ 	0-15	= supported transport classes (class 1)
+                                        $ 	16	= cyclic (1 = supported)
+                                        $ 	17	= change of state (1 = supported)
+                                        $ 	18	= on demand (0 = not supported)
+                                        $ 	19-23	= reserved (must be zero)
+                                        $ 	24-27	= exclusive owner
+                                        $ 	28-30	= reserved (must be zero)
+                                        $ 	31	= client 0 (don't care for classes 0 and 1)
+                0x44640405,             $ connection parameters
+                                        $ 	0	= O=>T fixed (1 = supported)
+                                        $ 	1	= O=>T variable (0 = not supported)
+                                        $ 	2	= T=>O fixed (1 = supported)
+                                        $ 	3	= T=>O variable (0 = not supported)
+                                        $ 	4-7	= reserved (must be zero)
+                                        $ 	8-11	= O=>T header (4 byte run/idle)
+                                        $ 	12-15	= T=>O header (no header)
+                                        $ 16-19	= O=>T connection type (point-to-point)
+                                        $ 20-23	= T=>O connection type (multicast, point-to-point)
+                                        $ 24-27	= O=>T priority (scheduled)
+                                        $ 28-31	= T=>O priority (scheduled)
+                Param10000,Param10101,Assem101,  $ O=>T RPI,Size,Format
+                Param10000,Param10100,Assem100,$ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Monitor Data And External Input",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C 65 2C 64";
+
+        Connection2 =
+                0x82010002,             $ trigger & transport
+                                        $  0-15  = supported transport classes (class 1)
+                                        $  16 = cyclic (1 = supported)
+                                        $  17 = change of state (1 = supported)
+                                        $  18 = on demand (0 = not supported)
+                                        $  19-23 = reserved (must be zero)
+                                        $  24-27 = input only
+                                        $  28-30 = reserved (must be zero)
+                                        $  31 = client 0 (don't care for classes 0 and 1)
+                0x44640305,             $ connection parameters
+                                        $  0 = O=>T fixed (1 = supported)
+                                        $  1 = O=>T variable (0 = not supported)
+                                        $  2 = T=>O fixed (1 = supported)
+                                        $  3 = T=>O variable (0 = not supported)
+                                        $  4-7 = reserved (must be zero)
+                                        $  8-11  = O=>T header (0 byte heartbeat)
+                                        $  12-15 = T=>O header (no header)
+                                        $  16-19 = O=>T connection type (point-to-point)
+                                        $  20-23 = T=>O connection type (multicast,point-to-point)
+                                        $  24-27 = O=>T priority (scheduled)
+                                        $  28-31 = T=>O priority (scheduled)
+                Param10000,0,,          $ O=>T RPI,Size,Format
+                Param10000,Param10100,Assem100,$ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Monitor Data (Input Only)",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C FE 2C 64";    $ inputs only path
+
+        Connection3 =
+                0x82010002,             $ trigger & transport
+                                        $ 	0-15	= supported transport classes (class 1)
+                                        $ 	16	= cyclic (1 = supported)
+                                        $ 	17	= change of state (1 = supported)
+                                        $ 	18	= on demand (0 = not supported)
+                                        $ 	19-23	= reserved (must be zero)
+                                        $ 	24-27	= exclusive owner
+                                        $ 	28-30	= reserved (must be zero)
+                                        $ 	31	= client 0 (don't care for classes 0 and 1)
+                0x44640305,             $ connection parameters
+                                        $ 	0	= O=>T fixed (1 = supported)
+                                        $ 	1	= O=>T variable (0 = not supported)
+                                        $ 	2	= T=>O fixed (1 = supported)
+                                        $ 	3	= T=>O variable (0 = not supported)
+                                        $ 	4-7	= reserved (must be zero)
+                                        $ 	8-11	= O=>T header (4 byte run/idle)
+                                        $ 	12-15	= T=>O header (no header)
+                                        $ 16-19	= O=>T connection type (point-to-point)
+                                        $ 20-23	= T=>O connection type (multicast, point-to-point)
+                                        $ 24-27	= O=>T priority (scheduled)
+                                        $ 28-31	= T=>O priority (scheduled)
+                ,0,,                    $ O=>T RPI,Size,Format
+                Param10002,2,Assem102,  $ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Sensor Output (Input Only)",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C FE 2C 66";
+
+[Capacity]
+        MaxCIPConnections = 64;
+        MaxConsumersPerMcast = 64;
+        TSpec1 = TxRx, 2, 6000;
+        TSpec2 = TxRx, 132, 6000;
+
+
