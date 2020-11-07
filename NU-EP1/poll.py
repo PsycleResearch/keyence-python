@@ -20,13 +20,13 @@ params = [
 def failure(exc):
     failure.string.append(str(exc))
 
-failure.string = [] # [ <exc>, ... ]
+failure.string = []
 
 def process(par, val):
     process.values[par] = val
 
 process.done = False
-process.values = {} # { <parameter>: <value>, ... }
+process.values = {}
 
 poller = threading.Thread(
     target=poll.poll, kwargs={
@@ -53,5 +53,5 @@ try:
 
         # time.sleep(0.1)
 finally:
-    process.done        = True
+    process.done = True
     poller.join()
