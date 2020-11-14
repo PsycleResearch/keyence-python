@@ -13,7 +13,7 @@ interface=eth0 # interface to which the cable is connected.
 dhcp-authoritative
 dhcp-range=192.168.0.50,192.168.0.100,12h
 dhcp-option=3,192.168.0.1
-dhcp-host=MAC_ADDRESS,192.168.0.51  # set the ip for the NU-EP1 mac address
+dhcp-host=<MAC_ADDRESS>,192.168.0.51  # set the ip for the NU-EP1 mac address
 ```
 
 - Configure ip for interface : 
