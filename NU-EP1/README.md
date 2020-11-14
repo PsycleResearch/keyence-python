@@ -25,8 +25,9 @@ auto eth0
 iface eth0 inet static
 address 192.168.0.1
 
-sudo ifup eth0
 ```
+
+`sudo ifup eth0`
 
 - Restart :
 `sudo systemctl restart dnsmasq.service`
