@@ -11,9 +11,9 @@ Link the NU-EP1 to jetson via ethernet. The jetson must then act as a DHCP serve
 ```
 interface=eth0 # interface to which the cable is connected.
 dhcp-authoritative
-dhcp-range=192.168.0.50,192.168.0.100,12h
-dhcp-option=3,192.168.0.1
-dhcp-host=<MAC_ADDRESS>,192.168.0.51  # set the ip for the NU-EP1 mac address
+dhcp-range=192.168.1.90,192.168.1.100,12h
+dhcp-option=3,192.168.1.55
+dhcp-host=<MAC_ADDRESS>,192.168.1.91  # set the ip for the NU-EP1 mac address
 ```
 
 - Configure ip for interface : 
@@ -23,7 +23,7 @@ dhcp-host=<MAC_ADDRESS>,192.168.0.51  # set the ip for the NU-EP1 mac address
 ```
 auto eth0
 iface eth0 inet static
-address 192.168.0.1
+address 192.168.1.55
 
 ```
 
