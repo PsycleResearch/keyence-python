@@ -2,38 +2,9 @@
 
 ## Setup
 
-Link the NU-EP1 to jetson via ethernet. The jetson must then act as a DHCP server as the NU-EP1 will ask for an IP.
+Follow the DHCP server setup on the main README.
 
-- Install dnsmasq
-
-`sudo vim /etc/dnsmasq.conf`
-
-```
-interface=eth0 # interface to which the cable is connected.
-dhcp-authoritative
-dhcp-range=192.168.1.90,192.168.1.100,12h
-dhcp-option=3,192.168.1.55
-dhcp-host=<MAC_ADDRESS>,192.168.1.91  # set the ip for the NU-EP1 mac address
-```
-
-- Configure ip for interface : 
-
-`sudo vim /etc/network/interfaces`
-
-```
-auto eth0
-iface eth0 inet static
-address 192.168.1.55
-
-```
-
-`sudo ifup eth0`
-
-- Restart :
-`sudo systemctl restart dnsmasq.service`
-`sudo systemctl restart networking.service`
-
-- Should work on the ip 
+## Usage
 
 `python poll.py 192.168.0.51`
 
