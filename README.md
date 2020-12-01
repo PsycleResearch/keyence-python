@@ -9,7 +9,7 @@ Products:
 # Setting the IP address
 
 Keyence devices can be used via ethernet once the IP has been set. Usually this is done via their Windows software.
-However, it can be done fully on linux by setting up a DHCP server. This DHCP server will answer the BOOTP/DHCP requests made by the keyence device.
+However, it can be done on linux by setting up a DHCP server. This DHCP server will answer the BOOTP/DHCP requests made by the keyence device.
 
 ## Steps
 
