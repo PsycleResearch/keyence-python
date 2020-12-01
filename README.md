@@ -25,7 +25,7 @@ dhcp-option=3,192.168.1.24 # IP address of the interface that acts as dhcp serve
 dhcp-host=<MAC_ADDRESS>,192.168.1.91  # set the ip for one keyence device
 ```
 
-### Configure ip for interface (make it static, just in case) : 
+### Configure ip for interface (make it static, just in case) 
 
 `sudo vim /etc/network/interfaces`
 
@@ -38,11 +38,9 @@ address 192.168.1.24
 
 `sudo ifup eth0`
 
-### Restart :
-
 `sudo reboot`
 
-### Communication should work.
+### Communication should work
 
 If it still doesn't work, these commands should help you debug:
 
